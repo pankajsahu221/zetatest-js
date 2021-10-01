@@ -1,1 +1,54 @@
-a css
+/*a css*/
+
+/* MEGA MENU */
+.mega__box {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  left: 0;
+  background: white;
+  box-sizing: border-box;
+  border-top: 4px solid rgb(235, 167, 21);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.35s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.mega__box .content {
+  /* background: white; */
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.mega__box .content .row {
+  width: calc(24% - 30px);
+  line-height: 30px;
+}
+.content .row .mega__links li {
+  color: rgb(82, 82, 82);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content .row .mega__links li:hover {
+  color: rgb(235, 167, 21);
+  transition: all 0.3s ease;
+}
+.toggle__btn {
+  display: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.close__btn {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.header__icon__cont .mobile-item {
+  display: none;
+}
